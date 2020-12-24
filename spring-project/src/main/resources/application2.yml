@@ -1,0 +1,16 @@
+javax:
+  validation:
+    constraints:
+      StartWith:
+        message: Baslangic problemi
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+spring:
+  security:
+    user:
+      name: user
+      password: 12345
+      roles: USER

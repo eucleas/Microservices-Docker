@@ -1,0 +1,8 @@
+docker build --tag node-discovery:1.0.0 .
+docker images
+docker container ls -a
+docker run -p 5556:5555 --name discovery node-discovery:1.0.0
+docker exec -it discovery sh
+docker attach discovery
+docker container kill discovery
+docker container prune
